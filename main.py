@@ -1,8 +1,7 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-
-# Assume `chatbot` is the compiled LangGraph app from previous steps
+from models import ChatRequest
 from chatbot_graph import chatbot
+from pydantic import BaseModel
 
 app = FastAPI()
 
