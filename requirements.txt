@@ -5,3 +5,4 @@ botocore
 langchain
 langgraph
 langchain-aws
+pydantic
