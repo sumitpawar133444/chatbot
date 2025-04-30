@@ -6,3 +6,4 @@ langchain
 langgraph
 langchain-aws
 pydantic
+opensearch-py

@@ -17,9 +17,10 @@ class ChatState(dict):
 prompt = PromptTemplate(
     input_variables=["chat_history", "user_message"],
     template=(
-        "You are a helpful AI assistant.\n\n"
+        "You are a helpful AI assistant that only returns SQL queries and nothing else.\n\n"
         "Conversation so far:\n{chat_history}\n\n"
-        "User: {user_message}\n\nAssistant:"
+        "The user is providing the following structured information:\n{user_message}\n\n"
+        "Based on this, generate the appropriate SQL query."
     )
 )
 
